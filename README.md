@@ -1,23 +1,56 @@
 # vdev-20211005
  VeracityDev Interview
 
-### Using the terminal (command line/shell), initialize a Git repository in this directory.
-(1) What is the command used?
-git init
+(1) git init <br />
 
-### Using the terminal, add the README.md file to the repo.
-(2) What is the command used?
-git add README.md
+(2) git add README.md <br />
 
-### Using the terminal, make the first commit with the message “Empty project with README”.
-(3) What is the command used?
-git commit -m "Empty project with README" README.md.
+(3) git commit -m "Empty project with README" README.md. <br />
 
-### Using the terminal, add the repository on GitHub as a remote to your local repository.
-(4) What is the command used?
-git remote add origin  https://github.com/achinthadilesha/vdev-20211005.git
-git remote -v
+(4) git remote add origin  https://github.com/achinthadilesha/vdev-20211005.git <br />
+git remote -v <br />
 
-### Using the terminal, push the commits in your local repo to the remote repo on GitHub.
-(5) What is the command used?
-git push -u origin main
+(5) git push -u origin main <br />
+
+(6) To install flutter [vist page](https://flutter.dev/docs/get-started/install). <br />
+
+- select your preffered platform
+- read the minimum requirements for your machine
+- download the flutter SDK and extract the file in the desired location
+- add flutter tool to your path using the command:
+  - export PATH="$PATH:`pwd`/flutter/bin"
+
+depeding on the platform updating the path might be different. Please refer the ** for your OS. <br />
+
+- [windows](https://flutter.dev/docs/get-started/install/windows#update-your-path)
+- [mac](https://flutter.dev/docs/get-started/install/macos#update-your-path)
+- [linux](https://flutter.dev/docs/get-started/install/linux#update-your-path)
+
+- to verify if there is any dependencies to install run command:
+  - flutter doctor
+
+for iOS setup (only for mac os)
+
+- install the latest version of xcode from app store
+- configure the Xcode command-line tools
+  - sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+  - sudo xcodebuild -runFirstLaunch
+- make sure the Xcode license agreement is signed using,
+  - sudo xcodebuild -license
+
+for android setup
+
+- install the latest version of [android studio](https://developer.android.com/studio)
+- setup the android studio with the latest version of android SDK, android SDK Command-line Tools, and android SDK Build-Tools.
+- run command
+  - flutter doctor
+- setup and android emulator by clicking avd manager
+- agree to android licenses
+  - flutter doctor --android-licenses
+
+setup an editor
+
+- you can use either VS code or android studio for developing flutter projects.
+- install dart and flutter pluggins into your IDE
+
+congratulations for installing and setting up flutter in your computer.
