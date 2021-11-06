@@ -5,6 +5,8 @@ import '/widgets/widgets.dart';
 import '/services/services.dart';
 
 class AuthScreen extends StatefulWidget {
+  static const routeName = '/authscreen';
+
   const AuthScreen({Key? key}) : super(key: key);
 
   @override

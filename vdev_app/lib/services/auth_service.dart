@@ -4,9 +4,10 @@ import '/models/models.dart';
 
 class AuthService with ChangeNotifier {
   static List<User> users = [
-    User(email: 'joe@black.com', password: 'Jo45*78'),
-    User(email: 'anal@acme.com', password: 'La79*!_io'),
-    User(email: 'peter@pan.com', password: 'Nap42-24'),
+    User(email: 'joe@black.lk', password: 'Jo45*78'),
+    User(email: 'amal@acme.lk', password: 'La79*!_io'),
+    User(email: 'peter@pan.lk', password: 'Nap42-24'),
+    User(email: 'a@g.com', password: '12345'),
   ];
 
   User localUser = User(email: '', password: '');
@@ -21,6 +22,11 @@ class AuthService with ChangeNotifier {
         localUser = user;
       }
     }
+    notifyListeners();
+  }
+
+  void logout() {
+    localUser = User(email: '', password: '');
     notifyListeners();
   }
 }
