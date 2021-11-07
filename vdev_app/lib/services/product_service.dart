@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:vdev_app/models/posts.dart';
 
+import '/models/posts.dart';
 import '/config/constants.dart';
 import '/models/user.dart';
 
